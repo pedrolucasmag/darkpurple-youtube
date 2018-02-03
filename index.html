@@ -1,54 +1,71 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Dark Purple Youtube Theme</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body>
-			<header id="header">
-				<div class="logo"><a href="index.html">Dark Purple Youtube <span>by Pedro Lucas Oliveira</span></a></div>
-				<a target="_blank" href="https://addons.mozilla.org/en-US/firefox/addon/youtube-dark-purple/?src=search"><i class="firefox icon round fa-firefox"></i></a>
-				<a target="_blank" href="https://www.paypal.com/webapps/shoppingcart?flowlogging_id=b9cff70383b2b&mfid=1517525752206_b9cff70383b2b#/checkout/openButton"><i class="paypal icon round fa-paypal"></i></a>
-				<a target="_blank" href="mailto:pedrolucasmag@gmail.com"><i class="contact icon round fa-at"></i></a>
-			</header>
-			<section id="one" class="wrapper post bg-img2">
-				<div class="inner">
-				<header>New Style Home Layout</header>
-				<br></br>
-					    <p><img src = "images/homenew.jpg" /></p>
-				</div>
-				<a href="#two" class="more"></a>
-			</section>
-			<section id="two" class="wrapper post bg-img">
-				<div class="inner">
-				<header>New Style Watch Layout</header>
-				<br></br>
-					    <p><img src = "images/watchnew.jpg" /></p>
-				</div>
-			<a href="#three" class="more"></a>
-			</section>
-			<section id="three" class="wrapper post bg-img2">
-				<div class="inner">
-				<header>Old Style Home Layout</header>
-				<br></br>
-					    <p><img src = "images/homeold.jpg" /></p>
-				<a href="#four" class="more"></a>
-				</div>
-			</section>
-			<section id="four" class="wrapper post bg-img">
-				<div class="inner">
-				<header>Old Style Watch Layout</header>
-				<br></br>
-					    <p><img src = "images/watchold.jpg" /></p>
-				</div>
-			</section>
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/main.js"></script>
+<!DOCTYPE html>
 
-	</body>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="js/jquery.onepage-scroll.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href='css/onepage-scroll.css' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Dark Purple Theme for YouTube</title>
+</head>
+
+<header>
+		<h1>Youtube Dark Purple</h1>
+</header>
+<body>
+<div id="main">
+		<section id="page1">
+			<div class= "box">
+				<p>Home Page (New Layout)</p>
+				<img src="img/newhome.png" alt="Home Page new layout">
+			</div>
+		</section> 
+		<section id="page2">
+			<div class= "box">
+				<p>Home Page (Old Layout)</p>
+				<img src="img/oldhome.png" alt="Home Page old layout">
+			</div>
+		</section>	 
+		</section> 
+		<section id="page2">
+			<div class= "box">
+				<p>Watch Page (New Layout)</p>
+				<img src="img/newwatch.png" alt="Home Page old layout">
+			</div>
+		</section>	 
+		</section> 
+		<section id="page2">
+			<div class= "box">
+				<p>Watch Page (Old Layout)</p>
+				<img src="img/oldwatch.png" alt="Home Page old layout">
+			</div>
+		</section>	 
+</div>
+		<div class= "navbar">
+		<a href="https://addons.mozilla.org/en-US/firefox/addon/youtube-dark-purple/" target="_blank" class="firefox fa fa-firefox"></a>
+		<a href="https://www.paypal.com/webapps/shoppingcart?flowlogging_id=cb148de170c8c&mfid=1517656005265_cb148de170c8c#/checkout/openButton" target="_blank" class="paypal fa fa-paypal"></a>
+		<a href="mailto:pedrolucasmag@gmail.com" target="_blank" class="contact fa fa-envelope"></a>
+		</div>
+</body>
+
+<script>
+$("#main").onepage_scroll({
+   sectionContainer: "section",     // sectionContainer accepts any kind of selector in case you don't want to use section
+   easing: "ease",                  // Easing options accepts the CSS3 easing animation such "ease", "linear", "ease-in",
+                                    // "ease-out", "ease-in-out", or even cubic bezier value such as "cubic-bezier(0.175, 0.885, 0.420, 1.310)"
+   animationTime: 800,             // AnimationTime let you define how long each section takes to animate
+   pagination: true,                // You can either show or hide the pagination. Toggle true for show, false for hide.
+   updateURL: false,                // Toggle this true if you want the URL to be updated automatically when the user scroll to each page.
+   beforeMove: function(index) {},  // This option accepts a callback function. The function will be called before the page moves.
+   afterMove: function(index) {},   // This option accepts a callback function. The function will be called after the page moves.
+   loop: true,                     // You can have the page loop back to the top/bottom when the user navigates at up/down on the first/last page.
+   keyboard: true,                  // You can activate the keyboard controls
+   responsiveFallback: false,        // You can fallback to normal page scroll by defining the width of the browser in which
+                                    // you want the responsive fallback to be triggered. For example, set this to 600 and whenever
+                                    // the browser's width is less than 600, the fallback will kick in.
+   direction: "vertical"            // You can now define the direction of the One Page Scroll animation. Options available are "vertical" and "horizontal". The default value is "vertical".  
+});
+</script>
+
 </html>
